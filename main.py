@@ -10,7 +10,7 @@ win=Tk()
 
 #global variable = current_question
 current_question = 0
-
+current_question1 = 0
 #score initialise
 score = 0
 
