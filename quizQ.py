@@ -17,7 +17,7 @@ quiz_data = [
     {
         "question": "Free nucleotides line up by complementary base pairing and adjacent nucleotides are joined by ____ bonds",
         "choices": ["sulphuric", "phosphodiester", "ester"],
-        "answer": "antisense"
+        "answer": "phosphodiester"
     },
     {
         "question": "What molecule is made?",
