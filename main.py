@@ -242,6 +242,58 @@ def openNewWindow4():
   newWindow['background']= '#f5b55d'
   gobackButton = Button(newWindow,text="Go Back", font=("Century Gothic", 20), bg='#f5b55d', command=newWindow.destroy).grid(row=0,column=0,sticky='nsew')
   titlelabel = Label(newWindow, text="Question Time!", font=("Century Gothic", 28), bg='#f5b55d').grid(row=0,column=1)
+  qs_label1 = ttk.Label(
+     newWindow,
+     anchor="center",
+     wraplength=500,
+     background= '#f5b55d'
+   )
+  qs_label1.grid(row=1, column=1)
+
+  #choice buttons
+  choice_btns1 = []
+  for i in range(3):
+    button = ttk.Button(
+      newWindow,
+      command=lambda i=i: check_answer(i)
+    )
+    button.grid(row=3, column=i)
+
+    choice_btns1.append(button)
+  #feedback label
+  feedback_label1 = ttk.Label(
+    newWindow,
+    anchor="center",
+    wraplength=500,
+    background= '#f5b55d'
+  )
+  feedback_label1.grid(row=6,column=1)
+
+  #initialising score
+  score=0
+  #score label
+  score_label1 = Label(
+    newWindow,
+    text="Score: 0/{}".format(len(quizQ.quiz_data1)),
+    anchor="center",
+    background= '#f5b55d'
+  )
+  score_label1.grid(row=8,column=1)
+
+
+# Create the next button
+  next_btn1 = ttk.Button(
+    newWindow,
+    text="Next",
+    command=next_question,
+    state="disabled"
+  )
+
+  next_btn1.grid(row=10,column=1)
+
+  # Initialize the current question index
+current_question1 = 0
+show_question1()
 
 
 
