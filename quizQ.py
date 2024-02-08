@@ -1,8 +1,9 @@
+#quiz data for transcription quiz
 quiz_data = [
     {
         "question": "What separates DNA strands?",
-        "choices": ["DNA Helicase", "RNA Polymerase", "Catalyase"],
-        "answer": "RNA Polymerase"
+        "choices": ["DNA Helicase", "RNA Polymerase", "Catalyase"], #will appear on option buttons
+        "answer": "RNA Polymerase" # correct answer
     },
     {
         "question": "What type of bonds get broken between complementary base pairs?",
