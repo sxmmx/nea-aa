@@ -436,7 +436,8 @@ def openNewWindow6():
   myLabel5 = Label(newWindow, text="What is protein synthesis?",font=("Century Gothic", 28), bg='#4287f5').grid(row=0,column=2)
   myLabel6 = Label(newWindow, text="Summary",font=("Century Gothic", 25), bg='#4287f5').grid(row=1,column=2)
 #adding text
-  summary_text = """Protein synthesis is the creation of protein using DNA. This is done by RNA Polymerase (an enzyme) breaking hydrogen bonds between the complementary bases( A, T, C, and G), 
+  summary_text = """Protein synthesis is the creation of protein using DNA. This is done by RNA Polymerase (an enzyme) breaking hydrogen bonds between the 
+  complementary bases( A, T, C, and G), 
   causing the DNA to break into the sense strand and antisense strand 
   (this references the direction the strand on nucleotides are facing). 
   The antisense strand will be used as a template strand and free nucleotides (basic structural unit of nucleic acids like DNA) 
