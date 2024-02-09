@@ -416,6 +416,7 @@ def openNewWindow4():
 
 #--start quiz
 def openNewWindow5():
+  global qs_label1, score_label, feedback_label, choice_btns, next_btn #defining global variables
   newWindow = Toplevel(root)
   newWindow.title("signup")
   newWindow.geometry("800x600")
