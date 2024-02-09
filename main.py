@@ -73,7 +73,7 @@ def next_question():
 # Function to display the current question and choices
 def show_question2():
     # Get the current question from the quiz_data list
-    question = quizQ.quiz_data1[current_question]
+    question = quizQ.quiz_data1[current_question1]
     qs_label1.config(text=question["question"])
 
     # Display the choices on the buttons
@@ -87,7 +87,7 @@ def show_question2():
 
 def check_answer2(choice):
   # Get the current question from the quiz_data1 list
-      question = quizQ.quiz_data1[current_question]
+      question = quizQ.quiz_data1[current_question1]
       selected_choice = choice_btns[choice].cget("text")
 
       # Check if the selected choice matches the correct answer
