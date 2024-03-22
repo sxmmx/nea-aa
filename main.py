@@ -118,7 +118,23 @@ def next_question2():
           messagebox.showinfo("Quiz Completed",
                               "Quiz Completed! Final score: {}/{}".format(score, len(quizQ.quiz_data1)))
 
+           conn = sqlite3.connect('Results.db')
+          c = conn.cursor()
+          c.execute('''CREATE TABLE IF NOT EXISTS Results(
+      [ID] INTEGER PRIMARY KEY AUTOINCREMENT,
+      [name] TEXT NOT NULL,
+      [score] INTEGER)
+  ''')
+  
+          c.execute('''INSERT INTO Results VALUES (name, score)''')
+          conn.commit()
+          c.execute('''select * from results''')
 
+
+
+
+
+  
 #size of window
 root.geometry("800x600")
 
